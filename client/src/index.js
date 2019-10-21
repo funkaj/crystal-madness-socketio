@@ -12,7 +12,7 @@ import * as serviceWorker from './serviceWorker';
 import './components/utils/FontLibrary';
 
 
-export const socket = io('https://crystal-madness.herokuapp.com/');
+export const socket = io('https://crystal-madness-2.herokuapp.com/');
 // export const socket = io('http://localhost:5000');
 
 const store = createStore(reducer, applyMiddleware(thunk));
