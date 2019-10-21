@@ -1,0 +1,61 @@
+.card-layout {
+	border: rgb(15, 13, 1) 3px solid;
+	background-color: rgba(128, 128, 128, 0.5);
+	background-image: linear-gradient(rgb(96, 105, 134), rgb(112, 112, 70));
+	border-radius: 10px;
+	margin: 0 auto;
+	color: white;
+	margin-bottom: 2rem;
+	max-height: 25rem;
+	max-width: 12rem;
+	min-height: 12rem;
+	position: relative;
+	overflow: hidden;
+}
+.contain {
+	max-width: 800px;
+	margin: 0 auto;
+}
+#green {
+	background-image: linear-gradient(rgb(96, 105, 134), rgb(82, 136, 99));
+}
+#purple {
+	background-image: linear-gradient(rgb(96, 105, 134), rgb(124, 96, 153));
+}
+#pink {
+	background-image: linear-gradient(rgb(96, 105, 134), rgb(149, 104, 86));
+}
+#blue {
+	background-image: linear-gradient(rgb(96, 105, 134), rgb(92, 151, 158));
+}
+.title {
+	background-color: rgba(240, 248, 255, 0.37);
+	border-bottom: gold 2px solid;
+	color: rgb(245, 243, 243);
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.7rem;
+	font-weight: bolder;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 22;
+}
+
+.image-container {
+	overflow: hidden;
+}
+.card-layout > div > img {
+	margin-left: 2rem;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	right: 0;
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+}
+@media screen and (max-width: 500px) {
+	.card-layout {
+		min-height: 7rem;
+	}
+}

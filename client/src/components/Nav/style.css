@@ -1,0 +1,32 @@
+.navbar {
+	border-bottom: rgb(185, 185, 185) solid 3px;
+}
+
+.nav-container {
+	background-color: rgb(128, 60, 168);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(253, 243, 146, 0.87);
+	text-decoration: none;
+	padding: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: rgb(255, 239, 22);
+	text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link:active {
+	color: rgb(255, 238, 0);
+	text-decoration: none;
+}
+.navbar-brand {
+	color: rgb(255, 238, 0) !important;
+}
+
+.navbar-text {
+	color: rgb(255, 238, 0) !important;
+}
+.navbar-light .navbar-text a {
+	color: rgb(255, 238, 0) !important;
+}

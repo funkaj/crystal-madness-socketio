@@ -1,0 +1,90 @@
+body {
+	height: 100%;
+	background: url(https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+		no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+.content > div > div > h1 {
+	color: rgb(215, 230, 15);
+}
+ul {
+	padding-left: 0px;
+}
+.centered {
+	height: 100vh;
+	margin: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* inner edge bevel test */
+.outer {
+	overflow: hidden;
+}
+.inner {
+	border: rgba(249, 253, 29, 0.911) 5px solid;
+}
+.inner i {
+	width: 38px;
+	height: 38px;
+	border: rgba(249, 253, 29, 0.911) 5px solid;
+	border-radius: 50%;
+	background: url(https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+		no-repeat;
+	background-size: cover;
+}
+.inner .top {
+	margin-top: -20px;
+}
+.inner .bottom {
+	margin-top: -20px;
+	margin-bottom: -22px;
+}
+.inner .left {
+	float: left;
+	margin-left: -20px;
+}
+.inner .right {
+	float: right;
+	margin-right: -20px;
+}
+.content {
+	min-width: 80vw;
+	min-height: 60vh;
+	z-index: 1;
+	border-radius: -10px;
+}
+
+@media screen and (max-width: 411px) {
+	.content {
+		min-width: 0vw;
+		min-height: 80vh;
+		z-index: 1;
+		border-radius: -10px;
+	}
+}
+@media screen and (max-width: 360px) {
+	.body {
+		color: white;
+		/* min-width: 100vw; */
+	}
+	.content {
+		min-width: 20vw;
+		min-height: 80vh;
+		z-index: 1;
+		border-radius: -10px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.content {
+		min-width: 80vw;
+		min-height: 60vh;
+		z-index: 1;
+		border-radius: -10px;
+	}
+}

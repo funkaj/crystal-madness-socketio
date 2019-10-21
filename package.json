@@ -1,0 +1,44 @@
+{
+	"name": "crystal-madness",
+	"version": "1.0.0",
+	"description": "Online Multiplayer game. Each player takes turn choosing a number hidden behind a crystal. Once a player is forced over the target number they lose.",
+	"main": "server.js",
+	"engines": {
+		"node": "8.11.1"
+	},
+	"scripts": {
+		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+		"start:prod": "node server.js",
+		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+		"client": "cd client && npm run start",
+		"test": "mocha",
+		"install": "cd client && npm install",
+		"build": "cd client && npm run build",
+		"heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+	},
+	"author": "Adam Funk <b.kimate@gmail.com>",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^4.1.1",
+		"nodemon": "^1.18.3"
+	},
+	"dependencies": {
+		"@fortawesome/free-solid-svg-icons": "^5.10.1",
+		"bcrypt-nodejs": "^0.0.3",
+		"body-parser": "^1.19.0",
+		"chai": "^4.2.0",
+		"chance": "^1.0.18",
+		"cheerio": "^1.0.0-rc.3",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"express-jwt": "^5.3.1",
+		"if-env": "^1.0.4",
+		"jsonwebtoken": "^8.4.0",
+		"mongoose": "^5.4.6",
+		"morgan": "^1.9.1",
+		"redux-thunk": "^2.3.0",
+		"socket.io": "^2.2.0",
+		"socket.io-client": "^2.2.0",
+		"thunk": "0.0.1"
+	}
+}
