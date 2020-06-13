@@ -32,7 +32,7 @@ function Instructions() {
 					<ul>
 						<li>Each player takes turns selecting crystals.</li>
 						<li>
-							Each crystal conatians a secret number (these will not change, but
+							Each crystal contains a secret number (these will not change, but
 							will remain hidden)
 						</li>
 						<li>That number will add to the total.</li>
@@ -42,7 +42,7 @@ function Instructions() {
 						</li>
 						<li>
 							The game will also end when a player meets the Target Number
-							exactly. They will recieve a Perfect Victory.
+							exactly. They will receive a Perfect Victory.
 						</li>
 					</ul>
 				</Col>
